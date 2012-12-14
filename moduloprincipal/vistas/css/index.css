@@ -1,0 +1,347 @@
+*{ margin: 0px; padding: 0px; }
+body a{
+	text-decoration: none;
+}
+@media screen and (max-width:500px){
+section{
+	position:relative;
+	float:left;
+	top: 1em;
+}
+} 
+@media screen and (min-width:500px){
+body{
+	max-width: 98%;
+	margin:auto;
+	background-image:url('../img/fondo.jpg') ;
+	background-repeat:repeat-y;
+	background-position:center center;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+}
+.aviso{
+	color: brown;
+	font-size: 10px;
+	line-height: 1em;
+}
+.separador{
+	border: 1px solid black;
+	box-shadow: -2px 4px 10px 5px #191919;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+/* } general */
+
+/* capes { */
+header{
+	border-bottom: 1px solid red;
+	margin:auto;
+	width: 100%;
+	height: 8%;
+}
+header h1{
+	position: relative;
+}
+nav{
+	margin-top:2px;
+	width: 100%;
+	height: 5.9%;
+}
+section{
+	width: 100%;
+	height: 90%;
+	background-color: rgba(255,127,36,0.3);
+}
+section table{
+	position:relative;
+	top: 5px;
+	left: 5px;
+}
+section table td#modificar{
+	background-color: orange;
+}
+section form{
+	margin: 10px;
+}
+section p{
+	margin-top: 10px;
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: right;
+	margin-top: 2px;
+}
+footer h2{
+	margin-right: 10px;
+}
+/* } capes */
+ 
+/* detallat { */
+#tot{
+	margin: 10px;
+}
+#login{
+	position: absolute;
+	left: 66.9%;
+	top: 30%;
+	width: 30%;
+	height: 50%;
+	margin: 1%;
+}
+#registroU{
+	position: absolute;
+	right: 36.9%;
+	top: 30%;
+	width: 30%;
+	height: 50%;
+	margin: 1%;
+}
+#novedades{
+	position: relative;
+	float: left;
+	top:1%;
+	left: 1%;
+	background-color: #B6B6B6;
+	box-shadow: -2px 4px 10px 5px #191919;
+	width: 40%;
+	min-height: 95%;
+}
+#informacion1{
+	position: relative;
+	float: right;
+	top:1%;
+	right: 1%;
+	background-color: #B6B6B6;
+	box-shadow: -2px 4px 10px 5px #191919;
+	width: 50%;
+	height: 95%;
+}
+.buscar{
+	position: relative;
+	top: 10px;
+	margin-bottom: 2%;
+}
+.datosLog{
+	background-color: rgb(139,134,78);
+	padding: 5px;
+}
+#titulo{
+	position:relative;
+	float:rigth;
+	top:-40px;
+}
+
+.modificar{
+	position: relative;
+	float:left;
+}
+#resultado3{
+	position: relative;
+	float:left;
+}
+#modificar{
+	position: absolute;
+	float: right;
+	left: 120%;
+	min-width: 100%;
+	min-height: 100%;
+}
+tr.e:hover{
+	background-color: green;
+}
+#sesionstart{
+	position: absolute;
+	left: 88%;
+	bottom: 85%;
+}
+#search_suggest1{
+	position: absolute;
+}
+#search_suggest5{
+	position: absolute;
+}
+.action{
+	position:relative;
+	float:right;
+	top: 30%;
+	background-color: rgba(255,255,255,0.6);
+	border:2px solid green;
+	border-radius:10px;
+}
+} 
+/*general{ */
+@media screen and (min-width:1200px){ 
+body{
+	max-width: 98%;
+	margin:auto;
+	background-image:url('../img/fondo.jpg') ;
+	background-repeat:repeat-y;
+	background-position:center center;
+	-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+}
+.aviso{
+	color: brown;
+	font-size: 10px;
+	line-height: 1em;
+}
+.separador{
+	border: 1px solid black;
+	box-shadow: -2px 4px 10px 5px #191919;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+/* } general */
+
+/* capes { */
+header{
+	border-bottom: 1px solid red;
+	width: 100%;
+	height: 8%;
+}
+header h1{
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+nav{
+	margin-top:2px;
+	width: 100%;
+	height: 5.9%;
+}
+section{
+	width: 100%;
+	min-height: 450px;
+	height: 90%;
+	background-color: rgba(255,127,36,0.3);
+	border:5px solid black;
+}
+section table{
+	position:relative;
+	top: 5px;
+	left: 5px;
+}
+section table td#modificar{
+	background-color: orange;
+}
+section form{
+	margin: 10px;
+}
+section p{
+	margin-top: 10px;
+}
+footer{
+	background-color: black;
+	color: white;
+	text-align: right;
+	margin-top: 2px;
+}
+footer h2{
+	margin-right: 10px;
+}
+/* } capes */
+ 
+/* detallat { */
+#tot{
+	margin: 10px;
+}
+#login{
+	position: absolute;
+	left: 66.9%;
+	top: 30%;
+	width: 30%;
+	height: 50%;
+	margin: 1%;
+}
+#registroU{
+	position: absolute;
+	right: 36.9%;
+	top: 30%;
+	width: 30%;
+	height: 50%;
+	margin: 1%;
+}
+#novedades{
+	position: relative;
+	float: left;
+	top:1%;
+	left: 1%;
+	background-color: #B6B6B6;
+	box-shadow: -2px 4px 10px 5px #191919;
+	width: 40%;
+	min-height: 95%;
+}
+#informacion1{
+	position: relative;
+	float: right;
+	top:1%;
+	right: 1%;
+	background-color: #B6B6B6;
+	box-shadow: -2px 4px 10px 5px #191919;
+	width: 50%;
+	height: 95%;
+}
+.buscar{
+	position: relative;
+	top: 10px;
+	margin-bottom: 2%;
+}
+.datosLog{
+	background-color: rgb(139,134,78);
+	padding: 5px;
+}
+#titulo{
+	position:relative;
+	top:-40px;
+}
+#titulo img{
+	float: right;
+	width: 590px;
+	height: 130px;
+}
+
+.modificar{
+	position: relative;
+	float:left;
+}
+#resultado3{
+	position: relative;
+	float:left;
+}
+#modificar{
+	position: absolute;
+	float: right;
+	left: 120%;
+	min-width: 100%;
+	min-height: 100%;
+}
+tr.e:hover{
+	background-color: green;
+}
+#sesionstart{
+	position: absolute;
+	left: 88%;
+	bottom: 85%;
+}
+#search_suggest1{
+	position: absolute;
+}
+#search_suggest5{
+	position: absolute;
+}
+.action{
+	position:relative;
+	float:right;
+	top: 30%;
+	background-color: rgba(255,255,255,0.6);
+	border:2px solid black;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius:10px;
+}
+}
+/* } detallat*/
