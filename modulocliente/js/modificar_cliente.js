@@ -1,5 +1,18 @@
+/**
+*@author Javier Ferri
+*@version 17122012
+*/
+/**
+*@method addEvent()
+*@class
+*@classdesc Añade la funcion inicializarEventos() al cuerpo de la pagina.
+*/
 addEvent(window,'load',inicializarEventos,false);
-var id;
+/**
+*@method inicializarEventos()
+*@class
+*@classdesc Añade eventos a los elementos de la pagina.
+*/
 function inicializarEventos(){
   var ob=document.getElementById('buscar');
   addEvent(ob,'keyup',presionTecla,false);
@@ -12,6 +25,14 @@ function inicializarEventos(){
   var ob4=document.getElementById('mas');
   addEvent(ob4,'change',presionTecla,false);
 }
+/**
+*@method presionTecla()
+*@class
+*@classdesc Conexion con buscar_cliente_ajax.php para busqueda de clientes.
+*@param {ElementBody} e
+*@returns {Cadena}
+*/
+/** @global */
 var conexion1;
 function presionTecla(e){
   conexion1=crearXMLHttpRequest();
@@ -20,6 +41,11 @@ function presionTecla(e){
 	"&radio2="+document.getElementById('radio1').checked+"&criterio_ord="+document.getElementById('criterio_ord').value+"&mas="+document.getElementById('mas').value, true);
   conexion1.send(null);
 }
+/**
+*@method procesarEventos()
+*@returns {cadena} Retorna el valor de buscar_cliente_ajax.php.
+*@classdesc Añadira a la capa #resultados el valor que de la conexion.
+*/
 function procesarEventos(){
   var resultados = document.getElementById("resultado3");
   if(conexion1.readyState == 4){
@@ -31,11 +57,25 @@ function procesarEventos(){
   else 
     resultados.innerHTML = '';
 }
+/** @global */
+var id;
+/**
+*@method mostrar()
+*@param {number} id1
+*@classdesc Añadira a la capa #modificar 'modifica_cliente_ajax1.php'.
+*/
 function mostrar(id1){
 	id = id1;
 	$('#modificar').load('./modulocliente/modelos/modifica_cliente_ajax1.php');
 }
+/** @global */
 var conexion2;
+/**
+*@method modificar()
+*@class
+*@classdesc Conexion con clienteControlador.php para modificar.
+*@returns {String}
+*/
 function modificar(){
 	conexion2=crearXMLHttpRequest();
 	conexion2.onreadystatechange = procesarEventos2;
@@ -44,6 +84,11 @@ function modificar(){
 	"&tele="+document.getElementById('tele').value+"&fecha="+document.getElementById('fecha').value, true);
 	conexion2.send(null);
 }
+/**
+*@method procesarEventos2()
+*@returns {String} Retorna el valor de la conexion.
+*@classdesc Añadira a la capa #resultados el valor que de la conexion.
+*/
 function procesarEventos2(){
   var resultados = document.getElementById("modificar");
   if(conexion2.readyState == 4){

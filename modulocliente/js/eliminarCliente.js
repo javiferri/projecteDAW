@@ -1,6 +1,17 @@
+/**
+*@author Javier Ferri
+*@version 17122012
+*/
+/**
+*@method addEvent()
+*@class
+*@classdesc Añade la funcion inicializarEventos() al cuerpo de la pagina.
+*/
 addEvent(window,'load',inicializarEventos,false);
+/** @global */
 var id;
 var i2;
+
 function inicializarEventos(){
   var ob=document.getElementById('buscar');
   addEvent(ob,'keyup',presionTecla,false);

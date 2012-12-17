@@ -1,3 +1,8 @@
+/**
+*@author Javier Ferri
+*@deprecated
+/*
+
 function altaC(){
 var resultado = true;
 erNombre=/^[a-zA-Z]{4,25}$/;

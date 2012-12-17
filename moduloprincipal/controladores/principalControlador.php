@@ -16,8 +16,11 @@ $passw = $_POST['contra'];
 		}
 }
 function mostrar(){
-//logout
-	echo '<section></section>';
+	require './moduloprincipal/modelo.php';
+	$cliente = buscarUltimo("clientes", "id_Cliente");
+	$entrenador = buscarUltimo("entrenador", "id_Entrenador");
+	$actividad = buscarUltimo("actividad", "idActividad");
+	require './moduloprincipal/vistas/mostrar.php';
 }
 function ComprobarAdministrador(){
 	if (!isset($_SESSION['userId']))

@@ -343,5 +343,29 @@ tr.e:hover{
 	box-shadow: 10px 10px 5px #888888;
 	border-radius:10px;
 }
+#new1{
+	position:absolute;
+	top:20%;	
+	border:3px solid brown;
+	width: 40%;
+	height: 75%;
+	border-radius:10px;
+	background-color: rgba(255,255,255,0.6);
+}
+.flip{
+	border:1px solid green;
+}
+.flip a{
+	color: black;
+}
+.flip a:hover{
+	color:white;
+}
+.flip:hover{
+	background-color: black;
+}
+#panel3{
+	border-bottom:1px solid black;
+}
 }
 /* } detallat*/

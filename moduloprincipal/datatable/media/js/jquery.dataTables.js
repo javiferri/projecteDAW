@@ -3,7 +3,7 @@
  * @description Paginate, search and sort HTML tables
  * @version     1.9.4
  * @file        jquery.dataTables.js
- * @author      Allan Jardine (www.sprymedia.co.uk)
+ * @author      Javier Ferri
  * @contact     www.sprymedia.co.uk/contact
  *
  * @copyright Copyright 2008-2012 Allan Jardine, all rights reserved.

@@ -1,7 +1,7 @@
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50c1f42128221901"></script>
 <section>
-		<div id= "registro"></div>
+		<div id= "registro" style="display:none;"></div>
 		<div id="login">
 		<form name="formulario" action="./moduloprincipal/controladores/principalControlador.php" method="POST">
 			<h1>Login: </h1>

@@ -1,9 +1,24 @@
+/**
+*@author Javier Ferri
+*@version 17122012
+*/
+/**
+*@method addRegistro()
+*@class
+*@description Añade un efecto de JQuery fadeIn en la capa #registro.
+*/
 function addRegistro(){
 	$('#registro').load('./moduloprincipal/vistas/html/registro.html');
-	$("#registro").fadeIn(800);
+	$("#registro").fadeIn(1000);
 };
-
 var conexion1;
+/**
+*@method alta()
+*@returns {String} Retorna el valor de registro.php.
+*@example
+* // returns "Registro Correcto."
+*@classdesc Conexion AJAX por GET a un php que retornara un valor.
+*/
 function alta(){
 var coincide;
 	erNombre=/^[a-zA-Z_0-9]{4,20}$/;
@@ -30,6 +45,11 @@ var coincide;
 		conexion1.send(null);
 	}
 }
+/**
+*@method procesarEventos()
+*@returns {cadena} Retorna el valor de registro.php.
+*@classdesc Añadira a la capa #resultados el valor que de la conexion.
+*/
 function procesarEventos(){
   var resultados = document.getElementById("resultados");
   if(conexion1.readyState == 4){
