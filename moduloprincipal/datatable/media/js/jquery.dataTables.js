@@ -9448,7 +9448,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sProcessing": "Processant...",
+			"sProcessing": "Cargando...",
 		
 		
 			/**
@@ -9481,7 +9481,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Cercar:",
+			"sSearch": "Buscar:",
 		
 		
 			/**

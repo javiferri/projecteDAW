@@ -81,7 +81,7 @@ function altaItem($nom,$pape,$sape,$dire,$tele,$fecha){
 			throw new Exception('Error seleccionando bd:'.$db->error, $db->errno);
 			
 		$consulta = "insert into clientes (nombre, apellido1, apellido2, direccion, telefono, fecha) 
-		values ('".$nom."','".$pape."','".$sape."','".$dire."',".$tele.",".$fecha.")";;
+		values ('".$nom."','".$pape."','".$sape."','".$dire."',".$tele.",".$fecha.")";
 		if ($db->query($consulta) === false)
 			throw new ExcepcionEnTransaccion();
 		$db->commit();

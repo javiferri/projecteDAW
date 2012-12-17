@@ -5,13 +5,13 @@
 /**
 *@method addEvent()
 *@class
-*@classdesc Añade la funcion inicializarEventos() al cuerpo de la pagina.
+*@description Añade la funcion inicializarEventos() al cuerpo de la pagina.
 */
 addEvent(window,'load',inicializarEventos,false);
 /**
 *@method inicializarEventos()
 *@class
-*@classdesc Añade eventos a los elementos de la pagina.
+*@description Añade eventos a los elementos de la pagina.
 */
 function inicializarEventos(){
   var ob=document.getElementById('buscar');
@@ -28,7 +28,7 @@ function inicializarEventos(){
 /**
 *@method presionTecla()
 *@class
-*@classdesc Conexion con buscar_cliente_ajax.php para busqueda de clientes.
+*@description Conexion con buscar_cliente_ajax.php para busqueda de clientes.
 *@param {ElementBody} e
 *@returns {Cadena}
 */
@@ -44,7 +44,7 @@ function presionTecla(e){
 /**
 *@method procesarEventos()
 *@returns {cadena} Retorna el valor de buscar_cliente_ajax.php.
-*@classdesc Añadira a la capa #resultados el valor que de la conexion.
+*@description Añadira a la capa #resultados el valor que de la conexion.
 */
 function procesarEventos(){
   var resultados = document.getElementById("resultado3");
@@ -62,7 +62,7 @@ var id;
 /**
 *@method mostrar()
 *@param {number} id1
-*@classdesc Añadira a la capa #modificar 'modifica_cliente_ajax1.php'.
+*@description Añadira a la capa #modificar 'modifica_cliente_ajax1.php'.
 */
 function mostrar(id1){
 	id = id1;
@@ -73,7 +73,7 @@ var conexion2;
 /**
 *@method modificar()
 *@class
-*@classdesc Conexion con clienteControlador.php para modificar.
+*@description Conexion con clienteControlador.php para modificar.
 *@returns {String}
 */
 function modificar(){

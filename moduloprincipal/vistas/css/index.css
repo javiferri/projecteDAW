@@ -346,14 +346,14 @@ tr.e:hover{
 #new1{
 	position:absolute;
 	top:20%;	
-	border:3px solid brown;
+	border:3px solid black;
 	width: 40%;
 	height: 75%;
 	border-radius:10px;
 	background-color: rgba(255,255,255,0.6);
 }
 .flip{
-	border:1px solid green;
+	border-bottom:1px solid brown;
 }
 .flip a{
 	color: black;
@@ -364,7 +364,7 @@ tr.e:hover{
 .flip:hover{
 	background-color: black;
 }
-#panel3{
+#panel,#panel2,#panel3{
 	border-bottom:1px solid black;
 }
 }

@@ -1,7 +1,7 @@
 /**
 *@author Javier Ferri
 *@deprecated
-/*
+*/
 
 function altaC(){
 var resultado = true;
