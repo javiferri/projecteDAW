@@ -4,13 +4,11 @@
 */
 /**
 *@method addEvent()
-*@class
 *@description Añade la funcion inicializarEventos() al cuerpo de la pagina.
 */
 addEvent(window,'load',inicializarEventos,false);
 /**
 *@method inicializarEventos()
-*@class
 *@description Añade eventos a los elementos de la pagina.
 */
 function inicializarEventos(){
@@ -25,15 +23,14 @@ function inicializarEventos(){
   var ob4=document.getElementById('mas');
   addEvent(ob4,'change',presionTecla,false);
 }
+/** @global */
+var conexion1;
 /**
 *@method presionTecla()
-*@class
 *@description Conexion con buscar_cliente_ajax.php para busqueda de clientes.
 *@param {ElementBody} e
 *@returns {Cadena}
 */
-/** @global */
-var conexion1;
 function presionTecla(e){
   conexion1=crearXMLHttpRequest();
   conexion1.onreadystatechange = procesarEventos;

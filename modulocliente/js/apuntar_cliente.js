@@ -1,7 +1,11 @@
 addEvent(window,'load',inicializarEventos,false);
+/** @global */
 var id;
+/** @global */
 var a;
+/** @global */
 var actividad1;
+/** @global */
 var actividad2;
 function inicializarEventos(){
   var ob=document.getElementById('buscar');
@@ -34,10 +38,20 @@ function procesarEventos(){
   else 
     resultados.innerHTML = '';
 }
+/**
+*@method mostrar()
+*@description Añade una vista en la capa indicada.
+*@param {Integer } di1
+*/
 function mostrar(id1){
 	id = id1;
 	$('#modificar').load('./modulocliente/vistas/apuntarseA2.php');
 }
+/**
+*@method guardar()
+*@description Guarda en variables globales las actividades elegidas.
+*@param {String } actividad
+*/
 function guardar(actividad){
 	if (a===1){
 		actividad1=actividad;

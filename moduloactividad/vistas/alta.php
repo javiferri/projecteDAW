@@ -1,4 +1,4 @@
-<script language="javascript" src="./nicEdit.js" type="text/javascript"></script>
+<script language="javascript" src="./moduloprincipal/utilidades/nicEdit.js" type="text/javascript"></script>
 <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
 <section>
 <div class="action">

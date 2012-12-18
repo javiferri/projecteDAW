@@ -4,14 +4,16 @@
 */
 /**
 *@method addEvent()
-*@class
-*@classdesc Añade la funcion inicializarEventos() al cuerpo de la pagina.
+*@description Añade la funcion inicializarEventos() al cuerpo de la pagina.
 */
 addEvent(window,'load',inicializarEventos,false);
 /** @global */
 var id;
 var i2;
-
+/**
+*@method inicializarEventos()
+*@description Añade la funcion presionTecla() al los elementos especificados.
+*/
 function inicializarEventos(){
   var ob=document.getElementById('buscar');
   addEvent(ob,'keyup',presionTecla,false);
@@ -24,7 +26,14 @@ function inicializarEventos(){
   var ob4=document.getElementById('mas');
   addEvent(ob4,'change',presionTecla,false);
 }
+/** @global */
 var conexion1;
+/**
+*@method presionTecla()
+*@description Conexion con eliminar_cliente.php para busqueda de clientes.
+*@param {ElementBody} e
+*@returns {Cadena}
+*/
 function presionTecla(e){
   conexion1=crearXMLHttpRequest();
   conexion1.onreadystatechange = procesarEventos;
@@ -32,6 +41,11 @@ function presionTecla(e){
 	"&radio2="+document.getElementById('radio1').checked+"&criterio_ord="+document.getElementById('criterio_ord').value+"&mas="+document.getElementById('mas').value, true);
   conexion1.send(null);
 }
+/**
+*@method procesarEventos()
+*@returns {cadena} Retorna el valor de buscar_cliente_ajax.php.
+*@description Añadira a la capa #resultados el valor que de la conexion.
+*/
 function procesarEventos(){
   var resultados = document.getElementById("resultado3");
   if(conexion1.readyState == 4){
@@ -43,13 +57,25 @@ function procesarEventos(){
   else 
     resultados.innerHTML = '';
 }
+/** @global */
 var conexion2;
+/**
+*@method eliminar()
+*@description Conexion con clienteControlador para eliminar el clientes.
+*@param {Integer} idE
+*@returns {Cadena}
+*/
 function eliminar(idE){
 	conexion2=crearXMLHttpRequest();
 	conexion2.onreadystatechange = procesarEventos2;
 	conexion2.open('GET','./modulocliente/controladores/clienteControlador.php?idE='+idE, true);
 	conexion2.send(null);
 }
+/**
+*@method procesarEventos2()
+*@returns {cadena} Retorna el valor de clienteControlador.php.
+*@description Añadira a la capa #modificar el valor que de la conexion.
+*/
 function procesarEventos2(){
   var resultados = document.getElementById("modificar");
   if(conexion2.readyState == 4){
